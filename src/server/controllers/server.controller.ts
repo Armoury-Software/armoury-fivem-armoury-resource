@@ -15,7 +15,7 @@ export class Server {
 
   public constructor(
     @Inject(ServerSessionService) private readonly _session: ServerSessionService,
-    @Inject(ServerVirtualWorldsService) private readonly _virtualWorlds: ServerVirtualWorldsService,
+    @Inject(ServerVirtualWorldsService) private readonly _virtualWorlds: ServerVirtualWorldsService
   ) {
     this.registerTimers();
 
@@ -34,7 +34,7 @@ export class Server {
         playerPosition[2],
         vehiclePosition[0],
         vehiclePosition[1],
-        vehiclePosition[2],
+        vehiclePosition[2]
       ) <= range
     ) {
       return true;
@@ -80,8 +80,8 @@ export class Server {
       this.playersBlockedOnTimes.delete(playerId);
     }
 
-    this._session.clearPlayerInfo(playerId);
     this._session.saveCritical(playerId);
+    this._session.clearPlayerInfo(playerId);
     Cfx.emit(`${Cfx.Server.GetCurrentResourceName()}:player-logout`, Cfx.source);
   }
 
