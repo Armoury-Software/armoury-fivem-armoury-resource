@@ -1,11 +1,8 @@
-import { Inject } from 'injection-js';
 import {
   Command,
   Controller,
   EventListener,
   Export,
-  ServerSessionService,
-  ServerVirtualWorldsService,
   LocationUtils,
   Resource,
   ResourceRef,
@@ -16,8 +13,8 @@ export class Server {
   private playersBlockedOnTimes: Map<number, number[]> = new Map();
 
   public constructor(
-    @Inject(ServerSessionService) private readonly session: ServerSessionService,
-    @Inject(ServerVirtualWorldsService) private readonly virtualWorlds: ServerVirtualWorldsService,
+    // @Inject(ServerSessionService) private readonly session: ServerSessionService,
+    // @Inject(ServerVirtualWorldsService) private readonly virtualWorlds: ServerVirtualWorldsService,
     @Resource('chat') private readonly chat: ResourceRef
   ) {
     this.registerTimers();
@@ -70,7 +67,7 @@ export class Server {
   @EventListener()
   public onPlayerConnect(): void {
     const playerId = Cfx.source;
-    this.virtualWorlds.setPlayerVirtualWorld(playerId, 0);
+    // this.virtualWorlds.setPlayerVirtualWorld(playerId, 0);
     this.updateTimeForPlayers(playerId);
   }
 
@@ -81,8 +78,8 @@ export class Server {
       this.playersBlockedOnTimes.delete(playerId);
     }
 
-    this.session.saveCritical(playerId);
-    this.session.clearPlayerInfo(playerId);
+    // this.session.saveCritical(playerId);
+    // this.session.clearPlayerInfo(playerId);
     Cfx.emit(`${Cfx.Server.GetCurrentResourceName()}:player-logout`, Cfx.source);
   }
 
@@ -115,22 +112,22 @@ export class Server {
 
   private updateTimeForPlayers(specificPlayerId?: number): void {
     const date: Date = new Date();
-    if (specificPlayerId || this.session.players.length) {
-      (specificPlayerId ? [specificPlayerId] : this.session.players).forEach((playerId: number) => {
-        let hour!: number, minute!: number, second!: number;
+    // if (specificPlayerId || this.session.players.length) {
+    //   (specificPlayerId ? [specificPlayerId] : this.session.players).forEach((playerId: number) => {
+    //     let hour!: number, minute!: number, second!: number;
 
-        if (this.playersBlockedOnTimes.has(playerId)) {
-          [hour, minute, second] = this.playersBlockedOnTimes.get(playerId);
-        }
+    //     if (this.playersBlockedOnTimes.has(playerId)) {
+    //       [hour, minute, second] = this.playersBlockedOnTimes.get(playerId);
+    //     }
 
-        Cfx.TriggerClientEvent(
-          `${Cfx.Server.GetCurrentResourceName()}:update-time`,
-          playerId,
-          hour ?? date.getHours(),
-          minute ?? date.getMinutes(),
-          second ?? date.getSeconds()
-        );
-      });
-    }
+    //     Cfx.TriggerClientEvent(
+    //       `${Cfx.Server.GetCurrentResourceName()}:update-time`,
+    //       playerId,
+    //       hour ?? date.getHours(),
+    //       minute ?? date.getMinutes(),
+    //       second ?? date.getSeconds()
+    //     );
+    //   });
+    // }
   }
 }

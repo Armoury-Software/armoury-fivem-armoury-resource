@@ -11,9 +11,19 @@ export class Client {
     switch (name) {
       case 'CEventNetworkEntityDamage': {
         const [
-          killed, killer, unknown1, unknown2, unknown3,
-          didPedDie, weaponHash, unknown4, unknown5, unknown6, unknown7,
-          didPedHitParkedCar, unknown8,
+          killed,
+          killer,
+          unknown1,
+          unknown2,
+          unknown3,
+          didPedDie,
+          weaponHash,
+          unknown4,
+          unknown5,
+          unknown6,
+          unknown7,
+          didPedHitParkedCar,
+          unknown8,
         ]: any[] = _args;
 
         if (killed === Cfx.Client.GetPlayerPed(-1) && !!didPedDie) {

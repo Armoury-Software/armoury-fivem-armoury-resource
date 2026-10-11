@@ -2,28 +2,28 @@
 # yarn lockfile v1
 
 
-"@armoury/fivem-framework-client@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.npmjs.org/@armoury/fivem-framework-client/-/fivem-framework-client-1.0.15.tgz"
-  integrity sha512-DrAEGydXFlPPBRDKh20F8oexmkFNOp3/BRJELw4vFNFoeYG+SZN8F1eH9dN+TBYxKiNlpdQJdrfuiPoPK9E40Q==
+"@armoury/fivem-framework-client@^1.0.18":
+  version "1.0.18"
+  resolved "https://registry.npmjs.org/@armoury/fivem-framework-client/-/fivem-framework-client-1.0.18.tgz"
+  integrity sha512-ghHWjNBQehGCc22bwhdSJ0VBmqOqgl7B9RqmVqbaxY7P4x41L/ay2fwrRlgh9AHwx61+LfRIZxqmX+QP5zqfaA==
   dependencies:
     injection-js "^2.4.0"
     reflect-metadata "^0.2.1"
     rxjs "^7.8.1"
 
-"@armoury/fivem-framework-common@1.0.15":
-  version "1.0.15"
-  resolved "https://registry.npmjs.org/@armoury/fivem-framework-common/-/fivem-framework-common-1.0.15.tgz"
-  integrity sha512-PmJrZCmidHmDLLrPWs79A9sO6TKkULFXlhOiqRIgmuQjHIaoJPukVQ2MTQhB+cNpayuHXsqcdbCUOZPvDhzMxQ==
+"@armoury/fivem-framework-common@1.0.18":
+  version "1.0.18"
+  resolved "https://registry.npmjs.org/@armoury/fivem-framework-common/-/fivem-framework-common-1.0.18.tgz"
+  integrity sha512-DduFwRqAN/R3FMa8jBr98k62QCm9KbedbIhlbnsQMwYVlkUQHM2o7tVXp3mmBXnlwh1I+CrLd4aFoJQ7rrjPQQ==
   dependencies:
     injection-js "^2.4.0"
     luaparse "^0.3.1"
     reflect-metadata "^0.2.1"
 
-"@armoury/fivem-framework-server@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.npmjs.org/@armoury/fivem-framework-server/-/fivem-framework-server-1.0.15.tgz"
-  integrity sha512-WMLCNgVAdPom9MTd/BmOwmtIeiGOSluJNJZEk+PL5hKo5AYwPyctuFu15As/s67R5UdtfKDsG1P14yeEch8BzA==
+"@armoury/fivem-framework-server@^1.0.18":
+  version "1.0.18"
+  resolved "https://registry.npmjs.org/@armoury/fivem-framework-server/-/fivem-framework-server-1.0.18.tgz"
+  integrity sha512-zR2Z+D87zCDYNDq1Js5EX9iSAceHh0PllbTjXUpuvJiEAFWUpgZWF5p2bPcsbL0qlpe6wjb7dm6JcVcX3ik3ug==
   dependencies:
     injection-js "^2.4.0"
     reflect-metadata "^0.2.1"
@@ -424,13 +424,13 @@ argparse@^2.0.1:
   version "1.0.0"
   resolved "file:src/client"
   dependencies:
-    "@armoury/fivem-framework-client" "^1.0.11"
+    "@armoury/fivem-framework-client" "^1.0.17"
 
 "armoury-fivem-base-resource-server@file:D:\\txData\\FiveMBasicServerCFXDefault_C90346.base\\resources\\[armoury]\\armoury\\src\\server":
   version "1.0.0"
   resolved "file:src/server"
   dependencies:
-    "@armoury/fivem-framework-server" "^1.0.11"
+    "@armoury/fivem-framework-server" "^1.0.17"
 
 array-includes@^3.1.4:
   version "3.1.4"
