@@ -1,60 +1,19 @@
-import { Controller, EVENT_DIRECTIONS, EventListener, Export, LocationUtils } from '@armoury/fivem-framework';
+import { Controller, EVENT_DIRECTIONS, EventListener, Export, LocationUtils } from '@armoury/fivem-framework-client';
 
 @Controller()
 export class Client {
-  private playerLeftVehicleInterval: string | number | NodeJS.Timeout;
-  private playerTowingVehicleInterval: string | number | NodeJS.Timeout;
+  private playerLeftVehicleInterval!: string | number | NodeJS.Timeout;
+  private playerTowingVehicleInterval!: string | number | NodeJS.Timeout;
   private vehicleBeingTowedEntity: number = NaN;
-
-  // TODO: Make this an Injection Token
-  private readonly spawnPosition = [247.83297729492188, -343.20001220703125, 44.4615478515625, 0, 0, 158.7401580810547];
-
-  @EventListener({ eventName: 'onClientGameTypeStart', direction: EVENT_DIRECTIONS.CLIENT_TO_CLIENT })
-  public onStart() {
-    console.log('onStart onClientGameTypeStart');
-    Cfx.exports['spawnmanager'].setAutoSpawnCallback(() => {
-      Cfx.exports['spawnmanager'].spawnPlayer(
-        {
-          x: this.spawnPosition[0],
-          y: this.spawnPosition[1],
-          z: this.spawnPosition[2],
-          model: 'mp_m_freemode_01',
-        },
-        () => {
-          Cfx.Client.SetEntityRotation(
-            Cfx.Client.GetPlayerPed(-1),
-            this.spawnPosition[3],
-            this.spawnPosition[4],
-            this.spawnPosition[5],
-            2,
-            true
-          );
-        }
-      );
-    });
-
-    Cfx.exports['spawnmanager'].setAutoSpawn(true);
-    Cfx.exports['spawnmanager'].forceRespawn();
-  }
 
   @EventListener({ eventName: 'gameEventTriggered', direction: EVENT_DIRECTIONS.CLIENT_TO_CLIENT })
   public onGameEventTriggered(name: string, ..._args: any[]) {
     switch (name) {
       case 'CEventNetworkEntityDamage': {
         const [
-          killed,
-          killer,
-          unknown1,
-          unknown2,
-          unknown3,
-          didPedDie,
-          weaponHash,
-          unknown4,
-          unknown5,
-          unknown6,
-          unknown7,
-          didPedHitParkedCar,
-          unknown8,
+          killed, killer, unknown1, unknown2, unknown3,
+          didPedDie, weaponHash, unknown4, unknown5, unknown6, unknown7,
+          didPedHitParkedCar, unknown8,
         ]: any[] = _args;
 
         if (killed === Cfx.Client.GetPlayerPed(-1) && !!didPedDie) {

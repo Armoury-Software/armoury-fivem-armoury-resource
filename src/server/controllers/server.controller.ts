@@ -7,19 +7,20 @@ import {
   ServerSessionService,
   ServerVirtualWorldsService,
   LocationUtils,
-} from '@armoury/fivem-framework';
+  Resource,
+  ResourceRef,
+} from '@armoury/fivem-framework-server';
 
 @Controller()
 export class Server {
   private playersBlockedOnTimes: Map<number, number[]> = new Map();
 
   public constructor(
-    @Inject(ServerSessionService) private readonly _session: ServerSessionService,
-    @Inject(ServerVirtualWorldsService) private readonly _virtualWorlds: ServerVirtualWorldsService
+    @Inject(ServerSessionService) private readonly session: ServerSessionService,
+    @Inject(ServerVirtualWorldsService) private readonly virtualWorlds: ServerVirtualWorldsService,
+    @Resource('chat') private readonly chat: ResourceRef
   ) {
     this.registerTimers();
-
-    Cfx.Server.SetRoutingBucketPopulationEnabled(0, false);
   }
 
   @Export()
@@ -69,7 +70,7 @@ export class Server {
   @EventListener()
   public onPlayerConnect(): void {
     const playerId = Cfx.source;
-    this._virtualWorlds.setPlayerVirtualWorld(playerId, 0);
+    this.virtualWorlds.setPlayerVirtualWorld(playerId, 0);
     this.updateTimeForPlayers(playerId);
   }
 
@@ -80,15 +81,15 @@ export class Server {
       this.playersBlockedOnTimes.delete(playerId);
     }
 
-    this._session.saveCritical(playerId);
-    this._session.clearPlayerInfo(playerId);
+    this.session.saveCritical(playerId);
+    this.session.clearPlayerInfo(playerId);
     Cfx.emit(`${Cfx.Server.GetCurrentResourceName()}:player-logout`, Cfx.source);
   }
 
   @Command()
   public language(playerId: number, [language]: [string]): void {
     if (language !== 'en' && language !== 'ro') {
-      global.exports['chat'].addMessage(playerId, 'Unsupported language.');
+      this.chat.instance.addMessage(playerId, 'Unsupported language.');
       return;
     }
 
@@ -114,8 +115,8 @@ export class Server {
 
   private updateTimeForPlayers(specificPlayerId?: number): void {
     const date: Date = new Date();
-    if (specificPlayerId || this._session.players.length) {
-      (specificPlayerId ? [specificPlayerId] : this._session.players).forEach((playerId: number) => {
+    if (specificPlayerId || this.session.players.length) {
+      (specificPlayerId ? [specificPlayerId] : this.session.players).forEach((playerId: number) => {
         let hour!: number, minute!: number, second!: number;
 
         if (this.playersBlockedOnTimes.has(playerId)) {
