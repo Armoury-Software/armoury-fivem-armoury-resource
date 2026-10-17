@@ -1,0 +1,131 @@
+{
+  "$version": "v4",
+  "name": "game",
+  "shared": [
+    {
+      "packageName": "@angular/common",
+      "outFileName": "_angular_common.PUzw0yDLwH.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_common"
+    },
+    {
+      "packageName": "@angular/common/http",
+      "outFileName": "_angular_common_http.NMEMwvSDmV.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_common"
+    },
+    {
+      "packageName": "@angular/platform-browser",
+      "outFileName": "_angular_platform_browser.8R5E__BTY3.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_platform_browser"
+    },
+    {
+      "packageName": "@angular/router",
+      "outFileName": "_angular_router.lRnodqTPwL.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_router"
+    },
+    {
+      "packageName": "rxjs",
+      "outFileName": "rxjs.ZwZyezqJa9.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.2",
+      "bundle": "node-rxjs"
+    },
+    {
+      "packageName": "rxjs/operators",
+      "outFileName": "rxjs_operators.n_aOinxyHE.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.2",
+      "bundle": "node-rxjs"
+    },
+    {
+      "packageName": "@angular/core",
+      "outFileName": "_angular_core.aHkbg4Sm6L.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_core"
+    },
+    {
+      "packageName": "@angular/core/event-dispatch-contract.min.js",
+      "outFileName": "_angular_core_event_dispatch_contract_min_js.3axcNP9xmW.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_core"
+    },
+    {
+      "packageName": "@angular/core/primitives/di",
+      "outFileName": "_angular_core_primitives_di.OrwGgM9dBw.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_core"
+    },
+    {
+      "packageName": "@angular/core/primitives/event-dispatch",
+      "outFileName": "_angular_core_primitives_event_dispatch.6L0fVxzhTj.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_core"
+    },
+    {
+      "packageName": "@angular/core/primitives/signals",
+      "outFileName": "_angular_core_primitives_signals.afHi3QMFVJ.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_core"
+    },
+    {
+      "packageName": "@angular/core/rxjs-interop",
+      "outFileName": "_angular_core_rxjs_interop.HoRVSDi3Az.js",
+      "requiredVersion": "22.1.4",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.1.4",
+      "bundle": "node-angular_core"
+    }
+  ],
+  "exposes": [],
+  "chunks": {
+    "node-angular_common": [
+      "chunk-LIATTXTX.js"
+    ],
+    "node-rxjs": [
+      "chunk-K4SXEO5T.js"
+    ],
+    "node-angular_core": [
+      "chunk-Y5D6LCBV.js",
+      "chunk-JT45OE3Y.js",
+      "chunk-32CBFWFR.js",
+      "chunk-YIWJLNUQ.js",
+      "chunk-PZNONLPT.js"
+    ],
+    "mapping-or-exposed": []
+  }
+}
