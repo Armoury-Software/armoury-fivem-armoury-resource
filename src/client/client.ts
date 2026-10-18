@@ -1,4 +1,10 @@
 import { bootstrap } from '@armoury/fivem-framework-client';
+
 import { Client } from './controllers/client.controller';
 
-bootstrap(Client);
+import { PickupService } from './services/pickup/pickup.service';
+import { ZoneService } from './services/zone/zone.service';
+
+bootstrap(Client, {
+  eager: [PickupService, ZoneService],
+});
