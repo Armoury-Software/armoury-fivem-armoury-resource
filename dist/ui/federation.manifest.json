@@ -1,3 +1,4 @@
 {
-  "characterSelection": "./remotes/character-selection/remoteEntry.json"
+  "characterSelection": "./remotes/character-selection/remoteEntry.json",
+  "houses": "./remotes/houses/remoteEntry.json"
 }

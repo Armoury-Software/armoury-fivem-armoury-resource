@@ -16,10 +16,11 @@ client_scripts {
 server_script 'dist/server/*.server.js'
 
 ui_page 'dist/ui/index.html'
-loadscreen 'dist/ui/loading.html'
+loadscreen 'dist/loading/loading.html'
 
 files {
-  'dist/ui/**/*'
+  'dist/ui/**/*',
+  'dist/loading/loading.html'
 }
 
 -- Configuration

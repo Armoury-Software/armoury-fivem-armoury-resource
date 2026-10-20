@@ -81,7 +81,6 @@ export class PickupService {
 
   @EventListener({ eventName: 'armoury:unsafe:zone:exit', direction: EVENT_DIRECTIONS.CLIENT_TO_CLIENT })
   protected onZoneExit(zoneId: number): void {
-    // Pickup IDs are their allocated zone IDs; lookup is O(1).
     this.onStreamOut(zoneId);
   }
 

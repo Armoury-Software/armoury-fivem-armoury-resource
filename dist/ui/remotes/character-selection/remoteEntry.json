@@ -73,12 +73,24 @@
       "strictVersion": true,
       "version": "22.1.4",
       "bundle": "node-angular_core"
+    },
+    {
+      "packageName": "@org/shop/nui",
+      "outFileName": "_org_shop_nui-GHTHTABC.js",
+      "requiredVersion": "~0.0.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "0.0.0"
     }
   ],
   "exposes": [
     {
       "key": "./Component",
-      "outFileName": "Component-5ARUWWWK.js"
+      "outFileName": "Component-5RHQMC3I.js"
+    },
+    {
+      "key": "./NuiHandler",
+      "outFileName": "NuiHandler-XDUJ4JFJ.js"
     }
   ],
   "chunks": {
