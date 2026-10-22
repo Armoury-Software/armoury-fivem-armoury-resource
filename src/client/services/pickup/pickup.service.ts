@@ -9,7 +9,7 @@ export class PickupService {
 
   public constructor(@Config('pickup') private readonly _pickupConfig: { streamRadius: number }) {}
 
-  @EventListener({ eventName: 'armoury:pickup:stream-in', direction: EVENT_DIRECTIONS.SERVER_TO_CLIENT })
+  @EventListener({ eventName: 'armoury:safe:pickup:stream-in', direction: EVENT_DIRECTIONS.SERVER_TO_CLIENT })
   protected onStreamIn(pickup: Pickup): void {
     if (this._active.has(pickup.id)) {
       return;
@@ -46,7 +46,7 @@ export class PickupService {
     }
   }
 
-  @EventListener({ eventName: 'armoury:pickup:stream-out', direction: EVENT_DIRECTIONS.SERVER_TO_CLIENT })
+  @EventListener({ eventName: 'armoury:safe:pickup:stream-out', direction: EVENT_DIRECTIONS.SERVER_TO_CLIENT })
   protected onStreamOut(id: number): void {
     const state = this._active.get(id);
     if (!state) {
@@ -121,13 +121,16 @@ export class PickupService {
         Cfx.Client.RemovePickup(state.handle);
         state.handle = 0;
         state.collected = true;
+
         console.log('A pickup has been collected, pickup id:', pickup.id);
         Cfx.emitNet('armoury:unsafe:pickup:collect', pickup.id);
+        Cfx.emit('armoury:unsafe:pickup:collect', pickup.id);
       }
 
       if (state.collected) {
         if (distance > pickup.rearmRadius ** 2) {
           state.collected = false;
+          Cfx.emit('armoury:unsafe:pickup:leave', pickup.id);
         }
       }
 

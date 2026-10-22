@@ -20,7 +20,8 @@ loadscreen 'dist/loading/loading.html'
 
 files {
   'dist/ui/**/*',
-  'dist/loading/loading.html'
+  'dist/loading/loading.html',
+  'locales/*.json'
 }
 
 -- Configuration

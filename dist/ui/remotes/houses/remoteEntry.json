@@ -3,24 +3,6 @@
   "name": "houses",
   "shared": [
     {
-      "packageName": "@angular/cdk/overlay",
-      "outFileName": "_angular_cdk_overlay.qJhBYQQxsX.js",
-      "requiredVersion": "22.2.3",
-      "singleton": true,
-      "strictVersion": true,
-      "version": "22.2.3",
-      "bundle": "node-angular_cdk"
-    },
-    {
-      "packageName": "@angular/cdk/portal",
-      "outFileName": "_angular_cdk_portal.5odyqI0kTX.js",
-      "requiredVersion": "22.2.3",
-      "singleton": true,
-      "strictVersion": true,
-      "version": "22.2.3",
-      "bundle": "node-angular_cdk"
-    },
-    {
       "packageName": "@angular/common",
       "outFileName": "_angular_common.s9k2lv8V4O.js",
       "requiredVersion": "22.1.4",
@@ -102,6 +84,222 @@
       "bundle": "node-angular_core"
     },
     {
+      "packageName": "@angular/cdk/a11y",
+      "outFileName": "_angular_cdk_a11y.MGLDcDRLP_.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/accordion",
+      "outFileName": "_angular_cdk_accordion.BPKtDxAi8g.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/bidi",
+      "outFileName": "_angular_cdk_bidi.vTOCWPkkmm.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/clipboard",
+      "outFileName": "_angular_cdk_clipboard.kIgqguNRfB.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/coercion",
+      "outFileName": "_angular_cdk_coercion.51Fpf9I1i1.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/coercion/private",
+      "outFileName": "_angular_cdk_coercion_private.dS8p7BBgt1.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/collections",
+      "outFileName": "_angular_cdk_collections.Q3A-0mg0dq.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/dialog",
+      "outFileName": "_angular_cdk_dialog.zJLGiCVNCN.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/drag-drop",
+      "outFileName": "_angular_cdk_drag_drop._nYrxgtWjP.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/keycodes",
+      "outFileName": "_angular_cdk_keycodes.FK-vBAdMJ1.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/layout",
+      "outFileName": "_angular_cdk_layout.sXGYntmpna.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/listbox",
+      "outFileName": "_angular_cdk_listbox.T3Vo6kZdYr.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/menu",
+      "outFileName": "_angular_cdk_menu.VbUyKrdzeK.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/observers",
+      "outFileName": "_angular_cdk_observers.jpk9UrejwY.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/observers/private",
+      "outFileName": "_angular_cdk_observers_private.dvt132TYru.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/overlay",
+      "outFileName": "_angular_cdk_overlay.mx1rGx7QBZ.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/platform",
+      "outFileName": "_angular_cdk_platform.RDOBDwTK0D.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/portal",
+      "outFileName": "_angular_cdk_portal.uAqCiEnHIy.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/private",
+      "outFileName": "_angular_cdk_private.j6lTodarWo.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/scrolling",
+      "outFileName": "_angular_cdk_scrolling.GFQtYuUdvw.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/stepper",
+      "outFileName": "_angular_cdk_stepper.lc15TE1-Vw.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/table",
+      "outFileName": "_angular_cdk_table.dpTbScJ35U.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/text-field",
+      "outFileName": "_angular_cdk_text_field.XAKbA1j39M.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
+      "packageName": "@angular/cdk/tree",
+      "outFileName": "_angular_cdk_tree.zEFFVoT07M.js",
+      "requiredVersion": "22.2.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "22.2.3",
+      "bundle": "node-angular_cdk"
+    },
+    {
       "packageName": "@org/shop/nui",
       "outFileName": "_org_shop_nui-GHTHTABC.js",
       "requiredVersion": "~0.0.0",
@@ -117,13 +315,10 @@
     },
     {
       "key": "./NuiHandler",
-      "outFileName": "NuiHandler-7BCNTBJG.js"
+      "outFileName": "NuiHandler-OQ45QB46.js"
     }
   ],
   "chunks": {
-    "node-angular_cdk": [
-      "chunk-4T5CXQIN.js"
-    ],
     "node-rxjs": [
       "chunk-K4SXEO5T.js"
     ],
@@ -133,6 +328,44 @@
       "chunk-32CBFWFR.js",
       "chunk-YIWJLNUQ.js",
       "chunk-PZNONLPT.js"
+    ],
+    "node-angular_cdk": [
+      "chunk-QVM7OE7V.js",
+      "chunk-OUIPMTRG.js",
+      "chunk-LYW4QERV.js",
+      "chunk-TTLGK2TK.js",
+      "chunk-RNULGOC3.js",
+      "chunk-Z4DWJRNS.js",
+      "chunk-DKL52G2Q.js",
+      "chunk-QLER3HO2.js",
+      "chunk-IYBHHPUW.js",
+      "chunk-FTMITMCZ.js",
+      "chunk-3WOHWLZB.js",
+      "chunk-RECHUXGF.js",
+      "chunk-ALR2ABW3.js",
+      "chunk-PM6XRI7M.js",
+      "chunk-FVDLKYOC.js",
+      "chunk-S2VIQ7IZ.js",
+      "chunk-DPTZ4NR4.js",
+      "chunk-7NZLVDTY.js",
+      "chunk-IQY62IKL.js",
+      "chunk-PACPXHXL.js",
+      "chunk-TT7XXVKE.js",
+      "chunk-FZNAMQAG.js",
+      "chunk-PGIYYMTQ.js",
+      "chunk-P7VGBIY2.js",
+      "chunk-SVIUGILY.js",
+      "chunk-LAIZNMCN.js",
+      "chunk-DQ6Z6NC4.js",
+      "chunk-DG2NPXAW.js",
+      "chunk-EPOSXZTE.js",
+      "chunk-VZX42TFW.js",
+      "chunk-JE6VEUSL.js",
+      "chunk-XID2BBVI.js",
+      "chunk-MQ6KVUBG.js",
+      "chunk-SMAQMSIK.js",
+      "chunk-AWGKBVI5.js",
+      "chunk-2NFLSA4Y.js"
     ],
     "mapping-or-exposed": []
   }

@@ -27,7 +27,7 @@ export class PickupService {
 
   @Export()
   public create(position: [number, number, number], pickupHash: string | number, options: PickupOptions = {}): number {
-    const rearmRadius = options.rearmRadius ?? 2;
+    const rearmRadius = options.rearmRadius ?? 1.35;
     const destroyOnCollect = options.destroyOnCollect ?? true;
 
     if (position.length !== 3 || !position.every(Number.isFinite)) {
@@ -155,8 +155,15 @@ export class PickupService {
       const ids = collected.values();
       for (let id = ids.next(); !id.done; id = ids.next()) {
         const pickup = this._pickups.get(id.value);
-        if (!pickup || this.distanceSquared(position, pickup.position) > pickup.rearmRadius ** 2) {
+        if (!pickup) {
           collected.delete(id.value);
+          continue;
+        }
+
+        if (this.distanceSquared(position, pickup.position) > pickup.rearmRadius ** 2) {
+          console.log(`Player (id: ${playerId}) left the rearm radius of Pickup (id: ${pickup.id}).`);
+          collected.delete(id.value);
+          Cfx.emit('armoury:safe:pickup:leave', playerId, id.value);
         }
       }
     }
@@ -202,7 +209,7 @@ export class PickupService {
     }
 
     streamed.add(pickup.id);
-    Cfx.emitNet('armoury:pickup:stream-in', playerId, pickup);
+    Cfx.emitNet('armoury:safe:pickup:stream-in', playerId, pickup);
   }
 
   private streamOut(playerId: number, zoneId: number): void {
@@ -211,7 +218,7 @@ export class PickupService {
       return;
     }
 
-    Cfx.emitNet('armoury:pickup:stream-out', playerId, zoneId);
+    Cfx.emitNet('armoury:safe:pickup:stream-out', playerId, zoneId);
     if (streamed.size === 0) {
       this._streamed.delete(playerId);
     }
