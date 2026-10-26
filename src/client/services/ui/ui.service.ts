@@ -15,12 +15,15 @@ export class UIService {
         Cfx.Client.SetNuiFocus(true, true);
         Cfx.Client.SetNuiFocusKeepInput(false);
         Cfx.Client.EnterCursorMode();
+        Cfx.emit('armoury:unsafe:ui:focus:received');
         break;
 
       case false:
         Cfx.Client.SetNuiFocus(false, false);
         Cfx.Client.LeaveCursorMode();
+        Cfx.emit('armoury:unsafe:ui:focus:gone');
         break;
     }
+
   }
 }

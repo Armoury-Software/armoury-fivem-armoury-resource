@@ -33,3 +33,7 @@ zone 'config' {
 pickup 'config' {
   streamRadius = 50
 }
+
+languages 'config' {
+  'en-US', 'ro-RO'
+}
