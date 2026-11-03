@@ -30,6 +30,24 @@
       "bundle": "node-angular_platform_browser"
     },
     {
+      "packageName": "@armoury/fivem-roleplay-gamemode-common",
+      "outFileName": "_armoury_fivem_roleplay_gamemode_common.iQURbLffM0.js",
+      "requiredVersion": "^1.0.64",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "1.0.64",
+      "bundle": "node-armoury_fivem_roleplay_gamemode_common"
+    },
+    {
+      "packageName": "lru-cache",
+      "outFileName": "lru_cache.HDyNcd_1Sj.js",
+      "requiredVersion": "^11.5.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "11.5.3",
+      "bundle": "node-lru_cache"
+    },
+    {
       "packageName": "rxjs",
       "outFileName": "rxjs.ZwZyezqJa9.js",
       "requiredVersion": "~7.8.0",
@@ -46,6 +64,15 @@
       "strictVersion": true,
       "version": "7.8.2",
       "bundle": "node-rxjs"
+    },
+    {
+      "packageName": "@ngx-translate/core",
+      "outFileName": "_ngx_translate_core.McWC6_lcMF.js",
+      "requiredVersion": "^18.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "18.1.0",
+      "bundle": "node-ngx_translate_core"
     },
     {
       "packageName": "@angular/core",
@@ -643,7 +670,23 @@
     },
     {
       "packageName": "@org/shop/nui",
-      "outFileName": "_org_shop_nui-GHTHTABC.js",
+      "outFileName": "_org_shop_nui-VM67TENF.js",
+      "requiredVersion": "~0.0.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "0.0.0"
+    },
+    {
+      "packageName": "@org/shop/shared-ui",
+      "outFileName": "_org_shop_shared_ui-OE7AGHIO.js",
+      "requiredVersion": "~0.0.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "0.0.0"
+    },
+    {
+      "packageName": "@org/models",
+      "outFileName": "_org_models-5Z36W5IS.js",
       "requiredVersion": "~0.0.0",
       "singleton": true,
       "strictVersion": true,
@@ -653,11 +696,11 @@
   "exposes": [
     {
       "key": "./Component",
-      "outFileName": "Component-XHYYJBJK.js"
+      "outFileName": "Component-AAKWMCUI.js"
     },
     {
       "key": "./NuiHandler",
-      "outFileName": "NuiHandler-GSWMLYO6.js"
+      "outFileName": "NuiHandler-M4KXMBPY.js"
     }
   ],
   "chunks": {
@@ -741,7 +784,7 @@
       "chunk-2NFLSA4Y.js"
     ],
     "mapping-or-exposed": [
-      "chunk-FTHT4BYA.js"
+      "chunk-2NFLSA4Y.js"
     ]
   }
 }

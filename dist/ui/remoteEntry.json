@@ -39,6 +39,33 @@
       "bundle": "node-angular_router"
     },
     {
+      "packageName": "@armoury/fivem-roleplay-gamemode-common",
+      "outFileName": "_armoury_fivem_roleplay_gamemode_common.iQURbLffM0.js",
+      "requiredVersion": "^1.0.64",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "1.0.64",
+      "bundle": "node-armoury_fivem_roleplay_gamemode_common"
+    },
+    {
+      "packageName": "@ngx-translate/http-loader",
+      "outFileName": "_ngx_translate_http_loader.qweBgenGI9.js",
+      "requiredVersion": "^18.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "18.1.0",
+      "bundle": "node-ngx_translate_http_loader"
+    },
+    {
+      "packageName": "lru-cache",
+      "outFileName": "lru_cache.HDyNcd_1Sj.js",
+      "requiredVersion": "^11.5.3",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "11.5.3",
+      "bundle": "node-lru_cache"
+    },
+    {
       "packageName": "rxjs",
       "outFileName": "rxjs.ZwZyezqJa9.js",
       "requiredVersion": "~7.8.0",
@@ -55,6 +82,15 @@
       "strictVersion": true,
       "version": "7.8.2",
       "bundle": "node-rxjs"
+    },
+    {
+      "packageName": "@ngx-translate/core",
+      "outFileName": "_ngx_translate_core.McWC6_lcMF.js",
+      "requiredVersion": "^18.1.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "18.1.0",
+      "bundle": "node-ngx_translate_core"
     },
     {
       "packageName": "@angular/core",
@@ -649,6 +685,14 @@
       "strictVersion": true,
       "version": "22.2.3",
       "bundle": "node-angular_material"
+    },
+    {
+      "packageName": "@org/shop/nui",
+      "outFileName": "_org_shop_nui-3KXRUECG.js",
+      "requiredVersion": "~0.0.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "0.0.0"
     }
   ],
   "exposes": [],

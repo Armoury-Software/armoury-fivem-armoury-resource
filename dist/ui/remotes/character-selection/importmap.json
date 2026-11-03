@@ -1,5 +1,8 @@
 {
   "imports": {
+    "@angular/common/http": "_angular_common_http.qd-WFm1OlM.js",
+    "@armoury/fivem-roleplay-gamemode-common": "_armoury_fivem_roleplay_gamemode_common.iQURbLffM0.js",
+    "lru-cache": "lru_cache.HDyNcd_1Sj.js",
     "rxjs": "rxjs.ZwZyezqJa9.js",
     "rxjs/operators": "rxjs_operators.n_aOinxyHE.js",
     "@angular/core": "_angular_core.aHkbg4Sm6L.js",

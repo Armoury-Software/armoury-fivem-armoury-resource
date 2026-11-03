@@ -1,4 +1,4 @@
-import { Command, Config } from '@armoury/fivem-framework-client';
+import { Command, Config, I18n, UIListener } from '@armoury/fivem-framework-client';
 import { Injectable } from 'injection-js';
 
 @Injectable()
@@ -13,5 +13,10 @@ export class LanguageService {
 
     Cfx.emit('armoury:unsafe:language:change:request', language);
     setTimeout(() => Cfx.emit('armoury:unsafe:language:change:done'), 1000);
+  }
+
+  @UIListener({ eventName: 'getCurrentPhrases' })
+  protected UI_getCurrentPhrases({}): Record<string, string> {
+    return I18n['polyglot'].phrases;
   }
 }

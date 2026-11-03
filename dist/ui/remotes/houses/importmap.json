@@ -1,6 +1,9 @@
 {
   "imports": {
-    "@angular/common": "_angular_common.s9k2lv8V4O.js",
+    "@angular/common": "_angular_common.PUzw0yDLwH.js",
+    "@angular/common/http": "_angular_common_http.NMEMwvSDmV.js",
+    "@armoury/fivem-roleplay-gamemode-common": "_armoury_fivem_roleplay_gamemode_common.iQURbLffM0.js",
+    "lru-cache": "lru_cache.HDyNcd_1Sj.js",
     "rxjs": "rxjs.ZwZyezqJa9.js",
     "rxjs/operators": "rxjs_operators.n_aOinxyHE.js",
     "@angular/core": "_angular_core.aHkbg4Sm6L.js",
@@ -33,6 +36,7 @@
     "@angular/cdk/table": "_angular_cdk_table.dpTbScJ35U.js",
     "@angular/cdk/text-field": "_angular_cdk_text_field.XAKbA1j39M.js",
     "@angular/cdk/tree": "_angular_cdk_tree.zEFFVoT07M.js",
+    "@nf-internal/chunk-LIATTXTX": "chunk-LIATTXTX.js",
     "@nf-internal/chunk-K4SXEO5T": "chunk-K4SXEO5T.js",
     "@nf-internal/chunk-Y5D6LCBV": "chunk-Y5D6LCBV.js",
     "@nf-internal/chunk-JT45OE3Y": "chunk-JT45OE3Y.js",
